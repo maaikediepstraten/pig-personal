@@ -1,0 +1,27 @@
+[project]
+name = "pig-latin"
+version = "0.1.0"
+description = "The Pig Latin Package"
+keywords = ['pig', 'latin', 'package', 'python', 'demo']
+readme = "README.md"
+
+# Fill in your name and e-mail here.
+authors = [
+    {name = "<username>", email = "user@domain.com"},
+]
+
+# Python version and dependencies
+requires-python = ">=3.12"
+
+dependencies = []
+
+[project.optional-dependencies]
+# Regular development dependencies.
+dev = [
+    "black >= 26.5.1",
+    "pylint >= 4.1.2",
+    "pytest >= 9.1.1",
+]
+
+[project.scripts]
+pig-latin = "pig_latin.latin:main"
